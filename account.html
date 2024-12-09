@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link rel="icon" type="image/png" href="favicon-32x32.png">
+
+</head>
+    
+<body>
+    <header>
+    <div class="container">
+        <h1 class="logo">
+            <a href="index.html" style="color: wheat; text-decoration: none;"> <img src ="icon.png"></a>
+        </h1>
+        <div class="search-panel">
+                <input type="text" class="search-input" placeholder="Поиск книг, авторов, жанров...">
+                <button class="search-button">⌕</button>
+            </div>
+        <!-- Hamburger Menu Icon -->
+        <div class="menu-toggle" onclick="toggleMenu()">
+            ☰
+        </div>
+        <nav class="nav-links">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="account.html">Аккаунт</a></li>
+                <li><a href="cart.html">Корзина</a></li>
+        
+            </ul>
+        </nav>
+    </div>
+</header>
+    <main>
+   <div class="account-container">
+        <div class="profile-avatar" id="avatar">E</div>
+        <!--<input type="file" id="avatarUpload" accept="image/*">-->
+        <button class="btn" onclick="document.getElementById('avatarUpload').click()">Изменить аватар</button>
+        <button class="btn" onclick ="location.href='wishlist.html'"> Избранное</button>
+        <h2 id="username"> Enthe1m</h2>
+        <p><strong>Email:</strong> <span id="email">user@example.com</span></p>
+
+        <!-- Текущие заказы --> 
+        <h3>Текущие заказы</h3>
+        <div class="slider-container">
+            <div class="slider-item">
+                <img src="https://content.img-gorod.ru/pim/products/images/b8/f1/019057e5-7ca2-7c53-971e-6b945c2cb8f1.jpg?width=0&height=1200&fit=bounds" alt="1984">
+                <p><strong>1984,  Скотный двор</strong><br>Джордж Оруэлл</p>
+                <p class="status">Текущий заказ</p>
+            </div>
+
+            <div class="slider-item">
+                <img src="https://content.img-gorod.ru/pim/products/images/70/55/018ed2bb-4fc8-7860-a461-f4b26ab77055.jpg?width=0&height=1200&fit=bounds" alt="Мастер и Маргарита">
+                <p><strong>Мастер и Маргарита</strong><br>Михаил Булгаков</p>
+                <p class="status">Текущий заказ</p>
+            </div>
+        </div>
+
+        <h3>История заказов</h3>
+        <div class="slider-container">
+            <div class="slider-item">
+                <img src="https://content.img-gorod.ru/pim/products/images/8c/b8/018ed2bf-c143-7f2a-817a-090f666d8cb8.jpg?width=0&height=1200&fit=bounds" alt="Преступление и наказание">
+                <p><strong>Преступление и наказание</strong><br>Фёдор Достоевский</p>
+                <p class="status">Завершён</p>
+            </div>
+
+            <div class="slider-item">
+                <img src="https://content.img-gorod.ru/pim/products/images/b8/9b/018ed2bd-5cee-75f1-bdfb-038190d6b89b.jpg?width=0&height=1200&fit=bounds" alt="Гордость и предубеждение">
+                <p><strong>Гордость и предубеждение</strong><br>Джейн Остин</p>
+                <p class="status">Завершён</p>
+            </div>            
+        </div>
+       
+        </div>
+    
+    </main>
+    <footer class="footer">
+            <link
+                rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+            <p>Следите за нами в социальных сетях:</p>
+            <div class="social-icons">
+                <a href="https://vk.com" target="_blank" aria-label="ВКонтакте">
+                    <i class="fab fa-vk"></i>
+                </a>
+                <a href="https://t.me" target="_blank" aria-label="Telegram">
+                    <i class="fab fa-telegram-plane"></i>
+                </a>
+                <a href="https://www.tiktok.com" target="_blank" aria-label="TikTok">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+            </div>
+        </footer>
+</body>
+</html>

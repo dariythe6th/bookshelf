@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Амстердам</title>
+    <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
+    <link rel="icon" type="image/png" href="favicon-32x32.png">
+
+</head>
+<body>
+    <header>
+    <div class="container">
+        <h1 class="logo">
+            <a href="index.html" style="color: wheat; text-decoration: none;"> <img src ="icon.png"></a>
+        </h1>
+        <div class="search-panel">
+                <input type="text" class="search-input" placeholder="Поиск книг, авторов, жанров...">
+                <button class="search-button">⌕</button>
+            </div>
+        <!-- Hamburger Menu Icon -->
+        <div class="menu-toggle" onclick="toggleMenu()">
+            ☰
+        </div>
+        <nav class="nav-links">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="account.html">Аккаунт</a></li>
+                <li><a href="cart.html">Корзина</a></li>
+        
+            </ul>
+        </nav>
+    </div>
+</header>
+     <main>
+       <div class="book-details-container">
+    <!-- Left section for the cover image and thumbnails -->
+    <div class="book-cover-section">
+        <!-- Large image -->
+        <img id="main-book-cover" class="main-book-cover" src="pics/roman/amster1.webp" alt="Book Cover">
+        
+        <!-- Thumbnails with navigation -->
+        <div class="thumbnail-gallery-wrapper">
+            
+            <div class="thumbnail-gallery">
+                <button id="prev-thumbnail" class="gallery-arrow">
+            </button>
+                <img class="thumbnail" src="pics/roman/amster1.webp" alt="Thumbnail 1" data-full="">
+                <img class="thumbnail" src="pics/roman/amster2.webp" alt="Thumbnail 2" >
+                <img class="thumbnail" src="pics/roman/amster3.webp" alt="Thumbnail 3" >
+                <img class="thumbnail" src="pics/roman/amster4.webp" alt="Thumbnail 4" >
+                <button id="next-thumbnail" class="gallery-arrow">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Right section for book info -->
+    <div class="book-info-section">
+        <h2>Амстердам</h2>
+        <p>Автор: <strong>Макьюэн Иэн Расселл</strong></p>
+        <div class="price-info">
+            <span class="original-price">575 руб</span>
+            <span class="discounted-price"> </span>
+        </div>
+         <div class="action-buttons">
+                    <button class="cart-btn" onclick="addToCart({title:'Амстердам', 
+                                                    price:'575 руб.', 
+                                                    imageSrc: '/pics/roman/amster1.webp'})">Добавить в корзину</button>
+                    <button 
+                            class="wishlist-button"
+                            onclick="addToWishlist({title:'Амстердам', 
+                                                    price:'575 руб.', 
+                                                    imageSrc: '/pics/roman/amster1.webp'})">
+
+                        ❤
+                    </button>
+        </div>
+        <p> Двое друзей – преуспевающий главный редактор популярной ежедневной газеты и 
+            знаменитый композитор, создающий «Симфонию тысячелетия»,
+            — заключают соглашение об эвтаназии: если один из них впадет в состояние беспамятства, 
+            то другой обязуется его убить...</p>
+        
+    </div>
+</div>
+
+    </main>
+    <footer class="footer">
+            <link
+                rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+            <p>Следите за нами в социальных сетях:</p>
+            <div class="social-icons">
+                <a href="https://vk.com" target="_blank" aria-label="ВКонтакте">
+                    <i class="fab fa-vk"></i>
+                </a>
+                <a href="https://t.me" target="_blank" aria-label="Telegram">
+                    <i class="fab fa-telegram-plane"></i>
+                </a>
+                <a href="https://www.tiktok.com" target="_blank" aria-label="TikTok">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+            </div>
+        </footer>
+</body>
+</html>

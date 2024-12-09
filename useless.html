@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link rel="icon" type="image/png" href="favicon-32x32.png">
+</head>
+    
+<body>
+    <header>
+    <div class="container">
+        <h1 class="logo">
+            <a href="index.html" style="color: inherit; text-decoration: none;">Книжный Мир</a>
+        </h1>
+        <div class="search-panel">
+                <input type="text" class="search-input" placeholder="Поиск книг, авторов, жанров...">
+                <button class="search-button">⌕</button>
+            </div>
+        <!-- Hamburger Menu Icon -->
+        <div class="menu-toggle" onclick="toggleMenu()">
+            ☰
+        </div>
+        <nav class="nav-links">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="account.html">Аккаунт</a></li>
+                <li><a href="cart.html">Корзина</a></li>
+        
+            </ul>
+        </nav>
+    </div>
+</header>
+    <main>
+    <div class="account-container">
+        <div class="profile-avatar">Г</div>
+        <h2>Гость</h2>
+        <button class="btn" onclick="openModal('loginModal')">Войти</button>
+        <button class="btn" onclick="openModal('registerModal')">Регистрация</button>
+    </div>
+
+    <!-- Модальное окно входа -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <h2>Вход</h2>
+            <form id="loginForm">
+                <span id="loginError" class="error-msg">Заполните все поля</span>
+                <input type="text" id="loginUser" placeholder="Логин">
+                <input type="password" id="loginPass" placeholder="Пароль">
+                <button type="submit" class="btn">Войти</button>
+            </form>
+            <button class="close-btn" onclick="closeModal('loginModal')">Закрыть</button>
+        </div>
+    </div>
+
+    <!-- Модальное окно регистрации -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <h2>Регистрация</h2>
+            <form id="registerForm">
+                <span id="registerError" class="error-msg"></span>
+                <input type="text" id="registerUser" placeholder="Имя пользователя">
+                <input type="email" id="registerEmail" placeholder="Электронная почта">
+                <input type="password" id="registerPass" placeholder="Пароль">
+                <button type="submit" class="btn">Зарегистрироваться</button>
+            </form>
+            <button class="close-btn" onclick="closeModal('registerModal')">Закрыть</button>
+        </div>
+    </div>
+    </main>
+    <footer class="footer">
+            <link
+                rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+            <p>Следите за нами в социальных сетях:</p>
+            <div class="social-icons">
+                <a href="https://vk.com" target="_blank" aria-label="ВКонтакте">
+                    <i class="fab fa-vk"></i>
+                </a>
+                <a href="https://t.me" target="_blank" aria-label="Telegram">
+                    <i class="fab fa-telegram-plane"></i>
+                </a>
+                <a href="https://www.tiktok.com" target="_blank" aria-label="TikTok">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+            </div>
+        </footer>
+</body>
+</html>
