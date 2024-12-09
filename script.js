@@ -60,6 +60,7 @@ function addToWishlist(book) {
 
 // Load Wishlist Items on Wishlist Page
 function loadWishlist() {
+    localStorage.removeItem('wishlist');
     const wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
     const wishlistGrid = document.getElementById('wishlist-grid');
 
