@@ -12,6 +12,9 @@ body {
     color: #5a4e4d;
     line-height: 1.6;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 .buy-button {
     background-color: #8c4b28;
@@ -203,6 +206,10 @@ footer {
     color: white;
     text-align: center;
     padding: 15px;
+    margin-top:auto;
+    width:100%;
+    display: block;
+    unicode-bidi: isolate;
 }
 
 .footer-content ul {
