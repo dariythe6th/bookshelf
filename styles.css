@@ -12,9 +12,6 @@ body {
     color: #5a4e4d;
     line-height: 1.6;
     overflow-x: hidden;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
 }
 .buy-button {
     background-color: #8c4b28;
@@ -201,16 +198,22 @@ textarea::placeholder {
 
 /* Footer Styles */
 footer {
-    display: flexbox;
     background-color: #512a0f;
     color: white;
     text-align: center;
-    padding: 15px;
+    padding: 1rem;
     margin-top:auto;
     width:100%;
     display: block;
     unicode-bidi: isolate;
+    
 }
+.main {
+    margin: 0 auto;
+    padding: 2rem;
+    flex: 1;  /* Этот блок займет оставшееся пространство */
+}
+
 
 .footer-content ul {
     list-style: none;
@@ -747,6 +750,9 @@ body {
     color: #5a4e4d;
     line-height: 1.6;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 /* Header Styles */
